@@ -27,7 +27,6 @@ export class AwsYoutubeShortsStack extends cdk.Stack {
 
     const bucket = new Bucket(this, 'TestBucket', {
       bucketName: "test-bucket-123e12easkldn8838923-12",
-      publicReadAccess: true,
     });
 
     const dummy = new NodejsFunction(this, "dummyLambda", {
